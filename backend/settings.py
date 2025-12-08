@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xd*$_&k4*_m=zbejt3-5g_fs+if(@b0x+n1xjtn3+cmrt2362f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'SriDb',        # example: cloudnotes
-        'USER': 'postgres',            # or your custom username
-        'PASSWORD': 'sql@123SRI',   # the password you set for PostgreSQL
-        'HOST': 'localhost',           # local PostgreSQL server
-        'PORT': '5432',                # default PostgreSQL port
+        'NAME': 'todo_db',
+        'USER': 'todo_user',
+        'PASSWORD': 'sql@123SRI',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
